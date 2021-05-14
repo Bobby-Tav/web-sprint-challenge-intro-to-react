@@ -19,13 +19,13 @@ export default function Character({info}) {
     const [detailName,setDetailName] = useState(null);
     
     return(
+        //When Clicking the div opens up the details and clicking it again closes it.
         <StyledInfoHolder className='Character' onClick={() => detailName !== info.name ? setDetailName(info.name): setDetailName(null)} >
-            { console.log(info.name) }
             <p>Name: {info.name}</p>
-            <p>Birth Year: {info.birth_year}</p>
             {
              detailName === info.name && <Details info={info} />
             }
+            <p>Birth Year: {info.birth_year}</p>
         </StyledInfoHolder>
     )
 }
