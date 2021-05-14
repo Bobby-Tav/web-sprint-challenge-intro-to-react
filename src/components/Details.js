@@ -9,7 +9,11 @@ h2{
 }
 
 `
-
+const StyledClick = styled.p`
+font-size:1rem;
+padding:0;
+align-self:flex-end;
+`
 
 export default function Details({info}){
 
@@ -21,6 +25,7 @@ export default function Details({info}){
             <p>Mass: {info.mass}</p>
             <p>Eye Color: {info.eye_color}</p>
             <p>Skin Color: {info.skin_color}</p>
+            <StyledClick>--Click to hide--</StyledClick>
         </StyledDetail>
     );
 }

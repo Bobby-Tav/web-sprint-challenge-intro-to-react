@@ -11,7 +11,7 @@ align-items:flex-start;
 width:60%;
 margin:2% auto;
 background-color: ${prop => prop.theme.mainColor};
-font-size:2rem;
+font-size:1.8rem;
 padding:0% 1%;
 
 
